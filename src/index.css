@@ -12,6 +12,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* Reuse these colors */
   --primary: #713fff;
   --secondary: #0A1629;
   --accent: rgb(255, 140, 0); 
@@ -20,6 +22,8 @@
   --high: #f73446;
   --medium: #ffbd21;
   --low: #0ac947;
+  --shadow: 0 6px 12px rgba(113,63,255,.25);
+  /* Reuse ends */
 }
 
 a {

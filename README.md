@@ -1,12 +1,44 @@
-### Plural routes
+# Challenge:
+
+Make this UI along with functional APIs. You are free to choose the library to make API calls.
+
+![Challenge](./Objective%20with%20Assignee.png "Challenge")
+
+### Getting started
+
+```shell
+# to start vite and load UI
+npm run dev
+```
+
+```shell
+# to start dev server
+npm run devServer
+```
+
+### Questions
+
+- Create a modular reusable UI to fetch top 10 tasks.
+- Features:
+  - Clicking on "progress" button should update task to the next step.
+    - To Do -> In Progress -> Done -> To Do ...
+  - Add Task should add the task to server ![Add](./Add.png "Add")
+- Bonus
+  - Filter by user
+  - Edit & Delete ![Edit](./Edit.png) ![Delete](./Delete.png)
+- Resources already added:
+  - Icons
+  - Css Variables for colors, shadow
+  - API server
+
+### Routes
 
 ```
-GET    /posts
-GET    /posts/1
-POST   /posts
-PUT    /posts/1
-PATCH  /posts/1
-DELETE /posts/1
+GET    /users
+GET    /tasks
+POST   /tasks
+PUT    /tasks/1
+DELETE /tasks/1
 ```
 
 ### Filter
@@ -14,9 +46,9 @@ DELETE /posts/1
 Use `.` to access deep properties
 
 ```
-GET /posts?title=json-server&author=typicode
-GET /posts?id=1&id=2
-GET /comments?author.name=typicode
+GET /tasks?userId=4
+GET /tasks?id=1&id=2
+GET /users?company.name=Robel-Corkery
 ```
 
 ### Paginate
@@ -29,8 +61,6 @@ In the `Link` header you'll get `first`, `prev`, `next` and `last` links.
 GET /posts?_page=7
 GET /posts?_page=7&_limit=20
 ```
-
-_10 items are returned by default_
 
 ### Sort
 
